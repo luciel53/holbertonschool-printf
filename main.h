@@ -1,4 +1,4 @@
-#ifndef MAINN_H
+#ifndef MAIN_H
 #define MAIN_H
 #include <stdlib.h>
 #include <stdio.h>
@@ -10,16 +10,15 @@ int _putchar(char c);
 
 
 /**
- * structure
- *
+ * typedef structure - it is the struction
+ * @C: ......
  */
 
-typedef struct format;
+typedef struct format
 {
 	char c;
 	char s;
-
-};
+} format;
 
 int main(void)
 {

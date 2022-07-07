@@ -7,12 +7,16 @@
  * @c: operator and pointer
  */
 
-int _printf(const char *format, c)
+int _printf(const char *c, ...)
 {
 	char c;
 	va_list list;
+	int i;
 
-	_printf("%c", va_list(list, c);
+	if (i = va_arg(list, int))
+		printf("%c", c);
+return (0);
+
 
 }
 
@@ -21,10 +25,11 @@ int _printf(const char *format, c)
  * @s: operator and pointer
  */
 
-int _printf(const char *format, s)
+int _printf(const char *s, ...)
 {
 	char s;
-	_print("%s", va_list(list, s));
+	va_list list;
+	_print("%s", va_arg(list, char));
 }
 
 /**
@@ -32,8 +37,10 @@ int _printf(const char *format, s)
  *
  */
 
-int _printf_%(const char *format, c)
+int _printf(const char *c, ...)
 {
-	char %;
-	_printf("%c", va_list(list, c))
+	char c;
+	va_list list;
+
+	_putchar('%');
 }
