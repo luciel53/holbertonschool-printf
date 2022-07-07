@@ -4,7 +4,7 @@
 
 /**
  * printf_c - function that prints a character
- * @c: operator and pointer
+ * @c: operator 
  */
 
 int _printf(const char *c, ...)
