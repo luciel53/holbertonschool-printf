@@ -25,6 +25,7 @@ int _print_c(va_list c)
  */
 
 int printf_s(va_list s)
+
 {
 	char *str = va_arg(s, char *);
 	int i;
