@@ -4,26 +4,29 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-int _printf(const char *format, ...);
-int _putchar(char c);
-
-
-
 /**
  * typedef structure - it is the struction
- * @C: ......
+ * @t: type......
  */
 
 typedef struct format
 {
-	char c;
-	char s;
-} format;
+	char *pt;
+	int (*f)(va_list);
+} format_t;
 
-int main(void)
-{
-	struct format;
-	return (0);
-}
+
+int _printf(const char *format, ...);
+int _putchar(char c);
+int print_s(va_list s);
+int print_c(va_list c);
+int print_percent(va_list percent);
+int print_r(va_list r);
+
+
+
+
+
+
 
 #endif

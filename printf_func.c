@@ -1,35 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 #include "main.h"
 
+
+
 /**
- * printf_c - function that prints a character
- * @c: operator
+ * print_c - function that prints a character
+ * @c: operator and pointer
+ * @list: print the list
  */
 
-int _printf(const char *c, ...)
+int _print_c(va_list c)
 {
-	char c;
-	va_list list;
-	int i;
-
-	if (i = va_arg(list, int))
-		printf("%c", c);
-return (0);
-
-
+	char ch = va_arg(c, char);
+	_putchar(ch);
 }
 
 /**
  * print_s - function that prints a string
  * @s: operator and pointer
+ * @i: operator and number of characters in the chain
+ *
  */
 
-int print_C()
+int printf_s(va_list s)
+
 {
-	char s;
-	va_list list;
-	_print("%s", va_arg(list, char));
+	char *str = va_arg(s, char *);
+	int i;
+
+	if (str == NULL)
+		str = "(NULL)";
+
+	for (i = 0 ; str[i]; i++)
+	{
+		_putchar (str[i]);
+	}
 }
 
 /**
@@ -37,9 +44,9 @@ int print_C()
  *
  */
 
-int _printf(const char *c, ...)
+int _printf_percent(const char *percent, ...)
 {
-	char c;
+	const char percent;
 	va_list list;
 
 	_putchar('%');
