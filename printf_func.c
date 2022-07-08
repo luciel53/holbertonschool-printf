@@ -4,7 +4,7 @@
 
 /**
  * printf_c - function that prints a character
- * @c: operator 
+ * @c: operator
  */
 
 int _printf(const char *c, ...)
@@ -25,7 +25,7 @@ return (0);
  * @s: operator and pointer
  */
 
-int _printf(const char *s, ...)
+int print_C()
 {
 	char s;
 	va_list list;
