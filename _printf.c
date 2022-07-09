@@ -5,24 +5,21 @@
 /**
  * _printf - printf function
  * @format: structure format
- * Return: ....
+ * Return: number of characters
  */
 
 int _printf(const char *format, ...)
 {
 	va_list list;
-
 	unsigned int i, j, flag;
 	unsigned int len = 0;
 
 	pt_t pt[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{NULL, NULL}
-	};
+		{"c", print_c}, {"s", print_s}, {NULL, NULL}
+		};
 va_start(list, format);
 i = 0;
-	if (format == NULL || format[i] == '\0' && format[0] == '%')
+	if (format == NULL || (format[i] == '\0' && format[0] == '%'))
 		return (0);
 
 	while (format[i] != '\0')
@@ -30,7 +27,6 @@ i = 0;
 		if (format[i] == '%' && format[i + 1] != '%')
 		j = 0;
 		flag = 0;
-
 		while (!pt[j].pt)
 		{
 			if (format[i + 1] == pt[j].pt[0])
@@ -63,4 +59,3 @@ i = 0;
 va_end(list);
 return (len);
 }
-
