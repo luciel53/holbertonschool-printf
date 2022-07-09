@@ -1,45 +1,56 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * _printf - printf function
  * @format: structure format
- * @format_t: structure format
  * Return: ....
  */
-
 int _printf(const char *format, ...)
 {
-	unsigned int i, j;
-	format_t ptr[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"%", print_percent},
-		{"r", print_r},
-		{NULL, NULL}
-	};
-
 	va_list list;
-char *format_t;
-va_start(list, format);
+	unsigned int i, j, flag;
+	unsigned int len = 0;
+	pt_t pt[] = {{"c", print_c}, {"s", print_s}, {NULL, NULL}
+	};
+	va_start(list, format);
 i = 0;
-	while (format[i])
-	{
-		j = 0;
-		while (ptr[j].pt != NULL)
-		{
-			if (*(ptr[j]).pt == format[i])
-			{
-				printf("%s", format_t);
-				ptr[j].f(list);
-				break;
-			}
-				j++;
-		}
-		i++;
-	}
-va_end(list);
+if (format == NULL || (format[i] == '\0' && format[0] == '%'))
 return (0);
+while (format[i] != '\0')
+{
+	if (format[i] == '%' && format[i + 1] != '%')
+	j = 0;
+	flag = 0;
+	while (!pt[j].pt)
+	{
+		if (format[i + 1] == pt[j].pt[0])
+		{
+			len = len + pt[j].print(list);
+                flag = 1;
+                i++;
+            }
+            j++;
+        }
+        if (flag == 0)
+        {
+            _putchar(format[i]);
+            len = len + 1;
+        }
+		else if (format[i] == '%' && format[i + 1] == '%')
+        {
+            _putchar('%');
+            i++;
+            len = len + 1;
+        }
+        else
+        {
+            _putchar(format[i]);
+            len = len + 1;
+        }
+    i++;
+    }
+va_end(list);
+return (len);
 }
 

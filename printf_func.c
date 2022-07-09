@@ -12,7 +12,7 @@
  * Return: number of characters printed
  */
 
-int _print_c(va_list c)
+int print_c(va_list c)
 {
 
 	char ch = va_arg(c, int);
@@ -27,7 +27,7 @@ int _print_c(va_list c)
  * Return: number of characters printed
  */
 
-int printf_s(va_list s)
+int print_s(va_list s)
 
 {
 	char *str = va_arg(s, char *);
