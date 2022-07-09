@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * _printf - printf function
- * @format: structure format
+ * @format: structure formatt
  * Return: ....
  */
 int _printf(const char *format, ...)
