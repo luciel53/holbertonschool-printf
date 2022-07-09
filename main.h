@@ -20,8 +20,8 @@ typedef struct pt
 int _printf(const char *format, ...);
 int _putchar(char c);
 
-int print_s(va_list s);
-int print_c(va_list c);
+int print_s(va_list str);
+int print_c(va_list ch);
 int print_i(va_list i);
 int print_d(va_list d);
 int print_u(va_list u);

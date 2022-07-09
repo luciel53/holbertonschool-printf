@@ -18,43 +18,43 @@ int _printf(const char *format, ...)
 	};
 	va_start(list, format);
 
-if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-	return (0);
-i = 0;
-while (format[i] != '\0')
-{
-	if (format[i] == '%' && format[i + 1] != '%')
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (0);
+	i = 0;
+	while (format[i] != '\0')
 	{
-		j = 0;
-		flag = 0;
-		while (!pt[j].pt)
+		if (format[i] == '%' && format[i + 1] != '%')
 		{
+			j = 0;
+			flag = 0;
+			while (pt[j].pt != NULL)
+			{
 			if (format[i + 1] == pt[j].pt[0])
 			{
 				len = len + pt[j].print(list);
-                flag = 1;
-                i++;
-            }
-            j++;
-        }
-        if (flag == 0)
-        {
-            _putchar(format[i]);
-            len = len + 1;
-        }
+				flag = 1;
+				i++;
+				}
+				j++;
+				}
+				if (flag == 0)
+				{
+					_putchar(format[i]);
+					len = len + 1;
+					}
 	}
 	else if (format[i] == '%' && format[i + 1] == '%')
-    {
-        _putchar('%');
-        i++;
-           len = len + 1;
-    }
-    else
-    {
-         _putchar(format[i]);
-         len = len + 1;
-    }
-    i++;
+	{
+		_putchar('%');
+		i++;
+		len = len + 1;
+		}
+		else
+		{
+			_putchar(format[i]);
+			len = len + 1;
+			}
+			i++;
 }
 va_end(list);
 return (len);
