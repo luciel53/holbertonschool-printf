@@ -17,7 +17,6 @@ typedef struct pt
 	int (*print)(va_list);
 } pt_t;
 
-
 int _printf(const char *format, ...);
 int _putchar(char c);
 
