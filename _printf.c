@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 #include "main.h"
-
 /**
  * _printf - printf function
  * @format: structure format
  * Return: number of characters
  */
-
 int _printf(const char *format, ...)
 {
 	va_list list;
@@ -17,11 +16,11 @@ int _printf(const char *format, ...)
 	pt_t pt[] = {
 		{"c", print_c}, {"s", print_s}, {NULL, NULL}
 		};
-va_start(list, format);
-i = 0;
-	if (format == NULL || (format[i] == '\0' && format[0] == '%'))
-		return (0);
 
+	va_start(list, format);
+	if (format == NULL || (format[0] == '%' && format[i] == '\0'))
+		return (0);
+	i = 0;
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%' && format[i + 1] != '%')
@@ -42,7 +41,6 @@ i = 0;
 			_putchar(format[i]);
 			len = len + 1;
 		}
-
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			_putchar('%');

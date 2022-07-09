@@ -13,8 +13,8 @@
 int print_c(va_list c)
 {
 	char ch = va_arg(c, int);
-    _putchar(ch);
-    return(1);
+	_putchar(ch);
+	return(1);
 }
 
 /**
@@ -26,13 +26,15 @@ int print_c(va_list c)
 
 int print_s(va_list s)
 {
-    char *str = va_arg(s, char *);
-    int i;
-		if (str == NULL)
-    		str = "(NULL)";
-		    for (i = 0 ; str[i]; i++)
-    		{
-        		_putchar (str[i]);
-    		}
-    return (i);
+	char *str = va_arg(s, char *);
+	int i;
+
+	if (str == NULL)
+		str = "(NULL)";
+
+	for (i = 0 ; str[i]; i++)
+	{
+		_putchar (str[i]);
+	}
+	return (i);
 }
