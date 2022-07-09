@@ -5,23 +5,22 @@
 #include <stdarg.h>
 
 /**
- * typedef structure - it is the struction
- * @t: type......
+ * typedef structure - struct for conversion specifiers
+ * @t: type of the struct
+ * @pt: struct print
+ * @print: print funtion specified
  */
 
-typedef struct format
+typedef struct pt
 {
-	char *pt;
-	int (*f)(va_list);
-} format_t;
-
+    char *pt;
+    int (*print)(va_list);
+} pt_t;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_s(va_list s);
 int print_c(va_list c);
-int print_percent(va_list percent);
-int print_r(va_list r);
 
 
 
