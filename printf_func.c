@@ -13,8 +13,9 @@
 
 int _print_c(va_list c)
 {
-	char ch = va_arg(c, char);
+	char ch = va_arg(c, int);
 	_putchar(ch);
+	return (0);
 }
 
 /**
@@ -36,17 +37,16 @@ int printf_s(va_list s)
 	{
 		_putchar (str[i]);
 	}
+return (0);
 }
 
 /**
- * print_% - function that prints %
+ * _printf_percent - function that prints %
  *
  */
 
-int _printf_percent(const char *percent, ...)
+int _printf_percent(va_list percent)
 {
-	const char percent;
-	va_list list;
-
 	_putchar('%');
+	return (0);
 }
