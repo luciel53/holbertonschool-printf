@@ -7,47 +7,32 @@
 
 /**
  * print_c - function that prints a character
- * @c: operator and pointer
+ * @c:
  * @list: print the list
+ * Return: number of characters printed
  */
 
-int _print_c(va_list c)
+int print_c(va_list c)
 {
 	char ch = va_arg(c, int);
 	_putchar(ch);
-	return (0);
+	return(1);
 }
-
 /**
  * print_s - function that prints a string
  * @s: operator and pointer
  * @i: operator and number of characters in the chain
- *
+ * Return: number of characters printed
  */
-
-int printf_s(va_list s)
-
+int print_s(va_list s)
 {
-	char *str = va_arg(s, char *);
-	int i;
-
-	if (str == NULL)
-		str = "(NULL)";
-
-	for (i = 0 ; str[i]; i++)
-	{
-		_putchar (str[i]);
-	}
-return (0);
-}
-
-/**
- * _printf_percent - function that prints %
- *
- */
-
-int _printf_percent(va_list percent)
-{
-	_putchar('%');
-	return (0);
+    char *str = va_arg(s, char *);
+    int i;
+		if (str == NULL)
+    		str = "(NULL)";
+		    for (i = 0 ; str[i]; i++)
+    		{
+        		_putchar (str[i]);
+    		}
+    return (i);
 }

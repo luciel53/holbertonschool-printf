@@ -13,19 +13,15 @@
 
 typedef struct pt
 {
-    char *pt;
-    int (*print)(va_list);
+	char *pt;
+	int (*print)(va_list);
 } pt_t;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+
 int print_s(va_list s);
 int print_c(va_list c);
-
-
-
-
-
 
 
 #endif
