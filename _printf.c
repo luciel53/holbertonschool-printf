@@ -3,12 +3,13 @@
 #include "main.h"
 /**
  * _printf - printf function
- * @format: structure formatt
+ * @format: structure format
  * Return: ....
  */
 int _printf(const char *format, ...)
 {
 	va_list list;
+
 	unsigned int i, j, flag;
 	unsigned int len = 0;
 	pt_t pt[] = {{"c", print_c}, {"s", print_s}, {NULL, NULL}
