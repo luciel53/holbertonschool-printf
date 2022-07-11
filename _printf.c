@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%' && format[i + 1] != '%')
-		{
+	{
 			j = 0;
 			flag = 0;
 			while (pt[j].print != NULL)
@@ -35,7 +35,6 @@ int _printf(const char *format, ...)
 				len = len + pt[j].print(list);
 				flag = 1;
 				i++;
-
 			}
 			j++;
 		}

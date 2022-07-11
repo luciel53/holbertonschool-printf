@@ -35,11 +35,12 @@ int print_s(va_list str)
 		if (s == NULL)
 
 		s = "(null)";
-			while (s[i] != '\0')
-			{
-				_putchar (s[i]);
-				i++;
-				}
+
+	while (s[i] != '\0')
+	{
+		_putchar (s[i]);
+		i++;
+	}
 		return (i);
 }
 
