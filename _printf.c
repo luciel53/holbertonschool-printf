@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 #include "main.h"
 /**
  * _printf - printf function
  * @format: structure format
  * Return:the number
  */
+
 int _printf(const char *format, ...)
 {
 	va_list list;
@@ -23,7 +25,7 @@ int _printf(const char *format, ...)
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%' && format[i + 1] != '%')
-	{
+		{
 			j = 0;
 			flag = 0;
 			while (pt[j].print != NULL)
@@ -59,4 +61,3 @@ va_end(list);
 
 return (len);
 }
-

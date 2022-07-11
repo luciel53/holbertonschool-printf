@@ -3,8 +3,6 @@
 #include <stdarg.h>
 #include "main.h"
 
-
-
 /**
  * print_c - function that prints a character
  * @ch: char of variable
@@ -18,6 +16,7 @@ int print_c(va_list ch)
 	c = va_arg(ch, int);
 
 	_putchar(c);
+
 	return (1);
 }
 /**
@@ -25,7 +24,9 @@ int print_c(va_list ch)
  * @str: operator and pointer
  * Return: number of characters printed
  */
+
 int print_s(va_list str)
+
 {
 	unsigned int i;
 	char *s;
