@@ -6,8 +6,6 @@
  * @format: structure format
  * Return:the number
  */
-
-
 int _printf(const char *format, ...)
 {
 	va_list list;
