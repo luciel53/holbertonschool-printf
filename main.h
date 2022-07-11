@@ -13,7 +13,7 @@
 typedef struct pt
 {
 	char *pt;
-	int (*print)(va_list);
+	int (*print)();
 } pt_t;
 
 int _printf(const char *format, ...);
