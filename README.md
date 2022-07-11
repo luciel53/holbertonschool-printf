@@ -1,9 +1,9 @@
 # holbertonschool-printf
 # printf
 
-The **printf**function allows to display on the screen window a text that follows a format defined by the programmer.
+The **printf** function allows to display on the screen window a text that follows a format defined by the programmer.
 _printf is the implementation of the prototype **int _printf(const char *format, ....);**. In addition this prototype is an implementation of printf standard function and variadic function.
-This function receives a format **(const char *format)** and a list of arguments.
+This function receives a format __(const char *format)__ and a list of arguments.
 # Project requirements
 
 All files will be compiled on Ubuntu 14.04 LTS
