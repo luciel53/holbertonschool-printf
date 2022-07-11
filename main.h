@@ -6,7 +6,7 @@
 
 /**
  * typedef structure - struct for conversion specifiers
- * @t: type of the structtt
+ * @t: type of the struct
  * @pt: struct print
  * @print: print funtion specified
  */
