@@ -3,7 +3,7 @@
 
 The **printf**function allows to display on the screen window a text that follows a format defined by the programmer.
 _printf is the implementation of the prototype **int _printf(const char *format, ....);**. In addition this prototype is an implementation of printf standard function and variadic function.
-This function receives a format **(const char *format)**and a list of arguments.
+This function receives a format **(const char *format)** and a list of arguments.
 # Project requirements
 
 All files will be compiled on Ubuntu 14.04 LTS
@@ -36,19 +36,19 @@ All files will be compiled on Ubuntu 14.04 LTS
 # The continuations of the files
 
 #### _printf.c :
-it is the function of _printf which uses the protype int _printf(const char *format, ...);.
+it is the function of **_printf** which uses the protype **int _printf(const char *format, ...);**.
 
 #### _putchar.c :
-it contains all the elements of _putchar which writes the character on the standard output stdout.
+it contains all the elements of **_putchar** which writes the character on the standard output stdout.
 
 #### main.h:
-contains all the prototypes of the project and the structure used for the _printf function
+contains all the prototypes of the project and the structure used for the **_printf** function
 
 #### man_3_printf:
-the custom _printf function for the manual page
+the custom **_printf** function for the manual page
 
 #### printf_func.c:
-contains functions (print_c, print_s, print_i, print_d) to convert prescriptors c, s , i and d
+contains functions (**print_c, print_s, print_i, print_d)** to convert prescriptors **c**, **s** , **i** and **d**
 # The authors
 Khady Thiam
 Lucie Leroty
