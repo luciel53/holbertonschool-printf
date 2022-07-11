@@ -5,10 +5,9 @@
 #include <stdarg.h>
 
 /**
- * typedef structure - struct for conversion specifiers
- * @t: type of the struct
- * @pt: struct print
- * @print: print funtion specified
+ * struct pt - struct for conversion specifiers
+ * @pt: name of the struct pt
+ * @print: print function specified
  */
 
 typedef struct pt
