@@ -15,7 +15,8 @@ int print_c(va_list ch)
 
 	c = va_arg(ch, int);
 
-	_putchar (c);
+	_putchar(c);
+
 	return (1);
 }
 /**
@@ -33,13 +34,14 @@ int print_s(va_list str)
 	s = va_arg(str, char *);
 	i = 0;
 		if (s == NULL)
-			s = "(NULL)";
+
+		s = "(null)";
 			while (s[i] != '\0')
 			{
 				_putchar (s[i]);
 				i++;
-			}
-	return (i);
+				}
+		return (i);
 }
 
 /**
@@ -62,7 +64,8 @@ int print_d(va_list dec)
 	if (last < 0)
 	{
 		_putchar('-');
-		num = num;
+		num = -num;
+		n = -n;
 		last = -last;
 		i++;
 	}

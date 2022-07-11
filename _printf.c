@@ -5,7 +5,7 @@
 /**
  * _printf - printf function
  * @format: structure format
- * Return: ....
+ * Return:the number 
  */
 
 int _printf(const char *format, ...)

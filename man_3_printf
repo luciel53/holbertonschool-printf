@@ -1,10 +1,13 @@
+ss this file with
+.\" groff -man -Tascii
+.\"qq
 .TH _printf 3 "2022/07/11" "V1.0" "_printf man page"
 
 .SH NAME
 .B _printf 3 - A program that reproduces the printf function.
 
 .SH DESCRIPTION
-.IR A function that produces output according to a format.
+A function that produces output according to a format.
 And write output to stdout, the standard output stream.
 The conversion specifiers used are : c, s, %, i, d.
 
@@ -12,17 +15,18 @@ The conversion specifiers used are : c, s, %, i, d.
 
 .SY SYNOPSIS
 main.h is the header file. And the prototype is contained in the _printf.c
-Return value: if it is successfull, the number of characters printed.
+Return value: if it is successfull, the number of characters is printed.
 
 .SH FILES
-main.h, _printf.c, printf_func.c, README.md, _putchar.c
+main.h, _printf.c, printf_func.c, README.md, _putchar.c, README.md
 
 .SH EXAMPLE
 To print the following sentence "You know nothing, Jon Snow."
 Write : _printf("You %s nothing, Jon Snow.\n", "know");
 
-
+.re
 .SH author
 Khady Thiam
 Lucie Leroty
+
 

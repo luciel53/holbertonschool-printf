@@ -5,15 +5,15 @@
 #include <stdarg.h>
 
 /**
- * struct pt - struct for conversion specifiers
- * @pt: name of the struct pt
- * @print: print function specified
+ * struct pt - tydef struct for conversion specifiers
+ * @pt: struct print
+ * @print: print funtion specified
  */
 
 typedef struct pt
 {
 	char *pt;
-	int (*print)(va_list);
+	int (*print)();
 } pt_t;
 
 int _printf(const char *format, ...);
