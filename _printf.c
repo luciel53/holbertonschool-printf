@@ -5,7 +5,7 @@
 /**
  * _printf - printf function
  * @format: structure format
- * Return:the number 
+ * Return:the number
  */
 
 int _printf(const char *format, ...)
@@ -25,39 +25,39 @@ int _printf(const char *format, ...)
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%' && format[i + 1] != '%')
-
 		{
 			j = 0;
 			flag = 0;
 			while (pt[j].print != NULL)
-			{
+		{
 			if (format[i + 1] == pt[j].pt[0])
 			{
 				len = len + pt[j].print(list);
 				flag = 1;
 				i++;
-				}
-				j++;
-				}
-				if (flag == 0)
-				{
-					_putchar(format[i]);
-					len = len + 1;
-					}
+			}
+			j++;
+		}
+		if (flag == 0)
+		{
+			_putchar(format[i]);
+			len = len + 1;
+		}
 	}
 	else if (format[i] == '%' && format[i + 1] == '%')
 	{
 		_putchar('%');
 		i++;
 		len = len + 1;
-		}
-		else
-		{
-			_putchar(format[i]);
-			len = len + 1;
-			}
-			i++;
+	}
+	else
+	{
+		_putchar(format[i]);
+		len = len + 1;
+	}
+	i++;
 }
 va_end(list);
+
 return (len);
 }
