@@ -5,11 +5,13 @@ The **printf**function allows to display on the screen window a text that follow
 _printf is the implementation of the prototype **int _printf(const char *format, ....);**. In addition this prototype is an implementation of printf standard function and variadic function.
 This function receives a format **(const char *format)**and a list of arguments.
 # Project requirements
+
 All files will be compiled on Ubuntu 14.04 LTS
     - * Functions and programs will be compiled with gcc 4.8.4 using -Wall-Werror-Wextra and -pedantic flags
     - * Code must respect the Betty style
     - * Global variables are not allowed
     - * Allowed functions and macros:
+	
            ** write (man 2 write)
            ** malloc (man 3 malloc)
            ** free (man 3 free)
@@ -17,6 +19,7 @@ All files will be compiled on Ubuntu 14.04 LTS
            ** va_end (man 3 va_end)
            ** va_copy (man 3 va_copy)
            ** va_arg (man 3 va_arg)
+
 # Required tasks
     *- Write the function that produces output with the conversion of c, s and % specifiers.
     *- Handle conversion the specifiers d, i.
