@@ -18,7 +18,7 @@ Return value: if it is successfull, the number of characters printed.
 main.h, _printf.c, printf_func.c, README.md, _putchar.c
 
 .SH EXAMPLE
-To print the sentence "You know nothing, Jon Snow."
+To print the following sentence "You know nothing, Jon Snow."
 Write : _printf("You %s nothing, Jon Snow.\n", "know");
 
 
