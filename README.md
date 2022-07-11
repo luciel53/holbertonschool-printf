@@ -7,11 +7,12 @@ This function receives a format **(const char *format)**and a list of arguments.
 # Project requirements
 
 All files will be compiled on Ubuntu 14.04 LTS
+
     - * Functions and programs will be compiled with gcc 4.8.4 using -Wall-Werror-Wextra and -pedantic flags
     - * Code must respect the Betty style
     - * Global variables are not allowed
     - * Allowed functions and macros:
-	
+
            ** write (man 2 write)
            ** malloc (man 3 malloc)
            ** free (man 3 free)
@@ -34,19 +35,19 @@ All files will be compiled on Ubuntu 14.04 LTS
 
 # The continuations of the files
 
-### _printf.c :
+#### _printf.c :
 it is the function of _printf which uses the protype int _printf(const char *format, ...);.
 
-### _putchar.c :
+#### _putchar.c :
 it contains all the elements of _putchar which writes the character on the standard output stdout.
 
-### main.h:
+#### main.h:
 contains all the prototypes of the project and the structure used for the _printf function
 
-### man_3_printf:
+#### man_3_printf:
 the custom _printf function for the manual page
 
-### printf_func.c:
+#### printf_func.c:
 contains functions (print_c, print_s, print_i, print_d) to convert prescriptors c, s , i and d
 # The authors
 Khady Thiam
