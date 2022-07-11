@@ -28,11 +28,11 @@ All files will be compiled on Ubuntu 14.04 LTS
 # Argument list
 | The specifiers |Functions             |Description                       |
 | ---------------|--------------------- |:--------------------------------:|
-| s             | print_string         |print a string                     |
+| s              | print_string         |print a string                     |
 | c              | print_char           |print just a char                 |
 | i             | print_integer        |print a number in base 10          |
 | d             | print_integer        |print a decimal number in base 10  |
-
+| %             | print_percent         |
 # The continuations of the files
 
 #### _printf.c :
@@ -48,7 +48,7 @@ contains all the prototypes of the project and the structure used for the **_pri
 the custom **_printf** function for the manual page
 
 #### printf_func.c:
-contains functions (**print_c, print_s, print_i, print_d)** to convert prescriptors **c**, **s** , **i** and **d**
+contains functions (**print_c, print_s, print_%,print_i, print_d)** to convert prescriptors **c**, **s** , **%**,**i** and **d**
 # The authors
 Khady Thiam
 Lucie Leroty

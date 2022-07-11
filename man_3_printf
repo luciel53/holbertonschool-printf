@@ -12,7 +12,6 @@ And write output to stdout, the standard output stream.
 The conversion specifiers used are : c, s, %, i, d.
 
 .SH options
-
 .SY SYNOPSIS
 main.h is the header file. And the prototype is contained in the _printf.c
 Return value: if it is successfull, the number of characters is printed.

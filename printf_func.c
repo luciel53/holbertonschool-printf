@@ -123,7 +123,7 @@ int print_i(va_list intg)
 			num = num / 10;
 		}
 		num = n;
-		while (exp > 0)
+		while (exp < 0)
 		{
 			dig = num / exp;
 			_putchar(dig + '0');
