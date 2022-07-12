@@ -32,7 +32,7 @@ All files will be compiled on Ubuntu 14.04 LTS
 | c              | print_char           |print just a char                 |
 | i             | print_integer        |print a number in base 10          |
 | d             | print_integer        |print a decimal number in base 10  |
-| %             | print_percent         |
+| %             | print_percent         |print a percent                   |
 # The continuations of the files
 
 #### _printf.c :
